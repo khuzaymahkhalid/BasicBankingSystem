@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Poppins-Regular, sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 20 0 20px 0;
+    font-family: 'candal' srif;
+    font-weight:400;
+    padding:0;
+ }
+ 
+ .tittle{
+     font-size: 32px;
+     color:#000;
+     text-transform: uppercase;
+     text-align: center;
+     font-weight: 700;
+     margin-bottom: 8px;
+
+ }
+
+ .container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.73rem);
+    padding-left: var(--bs-gutter-x, 0.73rem);
+    margin-right: auto;
+    margin-left: auto;
+    align-items:center;
+    padding-top: 12px;
+}
+/* header 
+-------------------------------*/
+header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #014f83;
+    width:100%;
+    box-sizing: border-box;
+
+}
+
+header .logo {
+    color: #fff;
+    height: 80px;
+    font-size: 30px;
+    line-height: 80px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 22px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:active,
+header nav ul li a:hover{
+    color: #fff;
+    background: #04669e;
+}
+
+
+/*home
+-------------------------------*/
+#home{
+    width: 100%;  
+    height: 100vh;
+    background: url(../images/bank.jpg) top center no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 80px ;
+}
+#home h1{
+     color: rgb(2, 31, 59);
+     font-size: 44px;
+     text-transform: uppercase;
+     text-decoration: underline;
+     text-align: center;
+     font-weight: 700;
+     margin-top: -100px;
+     margin-left: 40%;
+}
+#home h2{
+    padding-left: 2px;
+    color: rgb(2, 31, 59);
+     font-size: 30px;
+     font-weight: 550;
+     margin-left: 40%;
+}
+
+@media (min-width:1024px){
+    #home{
+        background-attachment: fixed;
+    }
+   
+} 
+#home:before{
+ content: "";
+ background: rgba(182, 178, 178, 0.62);
+ position: absolute;
+ bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#home .container-home {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+/*customers
+-------------------------------*/
+
+#customers h1{
+     color: rgb(2, 31, 59);
+     font-size: 44px;
+     text-transform: uppercase;
+     text-decoration: underline;
+     text-align: center;
+     font-weight: 700;
+     margin-top: -100px;
+     margin-left: 40%;
+}
+#customers h2{
+    padding-left: 2px;
+    color: rgb(2, 31, 59);
+     font-size: 30px;
+     font-weight: 550;
+     
+}
+
+#customers th{
+    font-size: 24px;
+}
+
+#customers tr{
+    font-size: 18px;
+}
+
+#customers .container{
+
+        width: 100%;
+        padding-right: 65px;
+        padding-left: 65px;
+        padding-bottom: 120px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+
+
+      
+/*transactions
+-------------------------------*/
+#transactions .container{
+
+    width: 70%;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 120px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+#transactions h1{
+    font-size: 44px;
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 700;
+    margin-top: -100px;
+    margin-left: 40%;
+}
+#transactions h2{
+   padding-left: 2px;
+   text-transform:capitalize;
+   padding-top: 3%;
+    font-size: 30px;
+    font-weight: 550;
+    
+}
+
+#transactions h3{
+    padding-left: 2px;
+    padding-top: 3%;
+    
+     font-size: 22px;
+     font-weight: 500;
+     text-decoration:underline;
+
+ }
+
+ #transactions h4{
+    padding-left: 2px;
+    padding-top: 3%;
+    
+     font-size: 19px;
+     font-weight: 570;
+     
+ }
+
+ #transactions p{
+    padding-left: 2px;
+    padding-top: 3%;
+    
+     font-size: 21px;
+     font-weight: 500;
+
+ }
+
+#transactions th{
+   font-size: 24px;
+}
+
+#transactions tr{
+   font-size: 18px;
+}
+
+button {
+    border:none;
+    background: #c6ddf0;
+}
+ button:hover{
+    background-color:rgb(168, 192, 214);
+    transform: scale(1.2);
+    color:white;
+}
+
+
+
+
+/*history
+-------------------------------*/
+#history .container{
+
+    width: 85%;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 120px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+#history h1{
+    font-size: 44px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 700;
+    margin-top: -100px;
+    margin-left: 40%;
+}
+#history h2{
+   padding-left: 2px;
+   padding-top: 3%;
+    font-size: 30px;
+    font-weight: 550;
+    
+}
+
+#history h3{
+    padding-left: 2px;
+    padding-top: 3%;
+    
+     font-size: 20px;
+     font-weight: 500;
+     
+ }
+
+#history th{
+   font-size: 24px;
+}
+
+#history tr{
+   font-size: 18px;
+}
+
+
+
+/*footer
+-------------------------------*/
+ .footer{
+        position: absolute;
+        left: 0;
+        top: 100;
+        width: 100%;
+        height: 3%;
+        color: rgb(5, 5, 5);
+        text-align: center;
+      }
+  
